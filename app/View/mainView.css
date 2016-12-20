@@ -1,0 +1,7 @@
+/*Styling for the main header*/
+md-toolbar.md-accent {
+    background-color: white !important;
+}
+.title {
+    color: rebeccapurple;
+}

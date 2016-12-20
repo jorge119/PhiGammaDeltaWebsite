@@ -9,23 +9,15 @@
     <!--Stylesheets-->
   <link rel="stylesheet" href="components/angular-material/angular-material.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="View/mainView.css">
   <link rel="stylesheet" href="app.css">
     <!--------------->
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 
-<body ng-controller="mainController as app">
-<div ng-include="'View/mainView.html'"></div>
-  <div ng-view></div>
-
-
-
-
-
-
-
-
+<body ng-controller="mainController as app" layout="row" layout-xs="column">
+<div ng-include="'View/mainView.html'" layout="column" role="main" flex class="layout-column flex"></div>
 
 
   <!-- In production use:
