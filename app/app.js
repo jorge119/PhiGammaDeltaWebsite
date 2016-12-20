@@ -5,27 +5,29 @@
   'use strict';
 
   // Declare app level module which depends on views, and components
-  angular.module('myapp', [
-    'ngMaterial',
-    'ngRoute',
-    'myApp.version'
-  ])
+  angular
+      .module('myApp', [
+        'ngMaterial',
+        'ngRoute',
+        'myApp.version',
+        'ngAnimate',
+        'ngAria'
+      ])
 
-    .config(function($locationProvider, $routeProvider) {
-      //This will handle the view routing
-      $routeProvider.when('/mainView', {
-        controller: 'View1Ctrl',
-        templateUrl: 'View/mainView.html'
-      });
-    })
+      .config(function($locationProvider, $routeProvider) {
+        //This will handle the view routing
+        $routeProvider.when('/mainView', {
+          templateUrl: 'View/mainView.html'
+        });
+      })
 
-
+      .controller('mainController', ApplicationController)
   /**
    * An App controller that changes some of the bounded data in the views if they are not set.
    */
-  ApplicationController.$inject = ['$scope', '$rootScope', '$state', '$stateParams', '$window'];
+  ApplicationController.$inject = ['$scope', '$window'];
 
-  function ApplicationController($scope, $rootScope, $state, $stateParams, $window) {
+  function ApplicationController($scope, $window) {
 
     var vm = this;
 
