@@ -17,7 +17,7 @@
       .config(function($locationProvider, $routeProvider) {
         //This will handle the view routing
         $routeProvider.when('/mainView', {
-          templateUrl: 'View/mainView.html'
+          templateUrl: 'View/mainView/mainView.html'
         });
       })
 
@@ -27,11 +27,11 @@
    */
   ApplicationController.$inject = ['$scope', '$window'];
 
-  function ApplicationController($scope, $window) {
+    function ApplicationController($scope, $window) {
 
-    var vm = this;
+        var vm = this;
 
-  }
+    }
 
 
 
