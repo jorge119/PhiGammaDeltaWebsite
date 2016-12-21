@@ -17,3 +17,7 @@ md-toolbar:not(.md-menu-toolbar).md-accent .md-ink-ripple {
 md-nav-bar md-nav-ink-bar {
     background: #cfd8dc;
 }
+.icon {
+    padding-top: 5%;
+    color: #636362;
+}
