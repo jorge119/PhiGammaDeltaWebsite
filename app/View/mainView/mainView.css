@@ -1,4 +1,7 @@
 /*Styling for the main header*/
+.headerLinks {
+    background-color: white;
+}
 md-toolbar.md-accent {
     background-color: white !important;
 }
