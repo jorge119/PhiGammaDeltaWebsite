@@ -5,3 +5,7 @@ md-toolbar.md-accent {
 .title {
     color: rebeccapurple;
 }
+.headerImg {
+    padding-left: 14%;
+    padding-top: 1%;
+}
