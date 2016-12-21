@@ -1,11 +1,21 @@
 <!--This will be the main view. Will contain what will be seen when you visit the root page -->
 <div ng-controller="mainViewController as view">
-    <md-content>
+    <md-content class="md-padding">
         <md-toolbar class="md-tall md-accent md-whiteframe-glow-z1">
             <!--<h2 class="md-toolbar-tools"></h2>-->
             <div layout="row" layout-align="start center" layout-align-sm flex="auto">
                 <img ng-src="{{view.headerImg}}" class="headerImg">
             </div>
+            <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+                <md-nav-item md-nav-click="goto('page1')" >Phi Gamma Delta IHQ</md-nav-item>
+                <md-nav-item md-nav-click="goto('page2')">Donate</md-nav-item>
+                <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
+                <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
+                <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
+                -->
+            </md-nav-bar>
+
         </md-toolbar>
+
     </md-content>
 </div>

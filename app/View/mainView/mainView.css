@@ -7,5 +7,10 @@ md-toolbar.md-accent {
 }
 .headerImg {
     padding-left: 14%;
-    padding-top: 1%;
+}
+md-toolbar:not(.md-menu-toolbar).md-accent .md-ink-ripple {
+    color: #78909c;
+}
+md-nav-bar md-nav-ink-bar {
+    background: #cfd8dc;
 }
