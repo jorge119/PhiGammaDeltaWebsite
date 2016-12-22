@@ -17,8 +17,22 @@
 
         var vm = this;
 
+        //Public functions
+        vm.redirectToFacebook = redirectToFacebook;
+
         //header image
         vm.headerImg = $sce.trustAsResourceUrl('Images/logo.png');
+
+
+        /*This function, when called, opens facebook in a new window*/
+        function redirectToFacebook() {
+            try {
+                $window.open('https://www.phigam.org/', '_blank');
+            }
+            catch (error) {
+                console.log("Unable to open Facebook in a new window " + error);
+            }
+        }
     }
 
 })();
