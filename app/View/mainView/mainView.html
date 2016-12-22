@@ -22,7 +22,23 @@
             <div layout="row" layout-align="start center" layout-align-sm flex="auto">
                 <img ng-src="{{view.headerImg}}" class="headerImg pointer" ng-click="view.redirectToPhiGam()">
             </div>
-
+            <div>
+                <md-menu-bar>
+                    <md-menu>
+                        <button ng-click="$mdOpenMenu()">
+                            File
+                        </button>
+                        <md-menu-content>
+                            <md-menu-item>
+                                <md-button ng-click="ctrl.sampleAction('share', $event)">
+                                    Share...
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </md-menu-bar>
+            </div>
         </md-toolbar>
+
     </md-content>
 </div>
