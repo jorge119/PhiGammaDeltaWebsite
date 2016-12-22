@@ -24,14 +24,20 @@
             </div>
             <div>
                 <md-menu-bar>
-                    <md-menu>
+                    <md-menu md-position-mode="target-right bottom">
                         <button ng-click="$mdOpenMenu()">
-                            File
+                            About Us
                         </button>
                         <md-menu-content>
                             <md-menu-item>
                                 <md-button ng-click="ctrl.sampleAction('share', $event)">
-                                    Share...
+                                    Our Values
+                                </md-button>
+                                <md-button ng-click="ctrl.sampleAction('share', $event)">
+                                    Our History
+                                </md-button>
+                                <md-button ng-click="ctrl.sampleAction('share', $event)">
+                                    Membership
                                 </md-button>
                             </md-menu-item>
                         </md-menu-content>

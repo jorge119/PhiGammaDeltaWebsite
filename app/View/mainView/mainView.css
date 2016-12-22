@@ -25,3 +25,6 @@ md-nav-bar md-nav-ink-bar {
 .pointer {
     cursor: pointer;
 }
+.menuBarEdit {
+    color: #78909c;
+}
