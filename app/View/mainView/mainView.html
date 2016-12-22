@@ -5,11 +5,11 @@
 
             <md-nav-bar md-selected-nav-item="currentNavItem">
 
-                <i class="fa fa-facebook fa-lg icon" layout-padding aria-hidden="true" ></i>
-                <i class="fa fa-instagram fa-lg icon" layout-padding aria-hidden="true"></i>
-                <i class="fa fa-twitter fa-lg icon" layout-padding aria-hidden="true"></i>
+                <i class="fa fa-facebook fa-lg icon pointer" layout-padding aria-hidden="true" ng-click="view.redirectToFacebook()"></i>
+                <i class="fa fa-twitter fa-lg icon pointer" layout-padding aria-hidden="true" ng-click="view.redirectToTwitter()"></i>
+                <i class="fa fa-instagram fa-lg icon pointer" layout-padding aria-hidden="true" ng-click="view.redirectToInstagram()"></i>
 
-                <md-nav-item md-nav-click="view.redirectToFacebook()"> Phi Gamma Delta IHQ</md-nav-item>
+                <md-nav-item md-nav-click="view.redirectToPhiGam()"> Phi Gamma Delta IHQ</md-nav-item>
                 <md-nav-item md-nav-click="">Donate</md-nav-item>
                 <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
                 <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
@@ -20,7 +20,7 @@
         <md-toolbar class="md-tall md-accent md-whiteframe-glow-z1">
             <!--<h2 class="md-toolbar-tools"></h2>-->
             <div layout="row" layout-align="start center" layout-align-sm flex="auto">
-                <img ng-src="{{view.headerImg}}" class="headerImg">
+                <img ng-src="{{view.headerImg}}" class="headerImg pointer" ng-click="view.redirectToPhiGam()">
             </div>
 
         </md-toolbar>

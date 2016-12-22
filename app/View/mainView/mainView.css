@@ -21,3 +21,6 @@ md-nav-bar md-nav-ink-bar {
     padding-top: 5%;
     color: #636362;
 }
+.pointer {
+    cursor: pointer;
+}
